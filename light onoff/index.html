@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+            justify-content: center;
+            position: relative;
+            top: 80px;
+            left: 500px;
+            border:2px solid black
+        }
+    </style>
+</head>
+<body>
+    <div><img src="off.jpg" alt="" height="350px"></div>
+    <script>
+        let newbtn=document.createElement("button")
+        let img1=document.querySelector("img")
+
+        
+        // newbtn.innerText="hello"
+        document.querySelector("div").after(newbtn)
+        newbtn.style.position="relative"
+        newbtn.style.top="150px"
+        newbtn.style.left="400px"
+        let value="off";
+       newbtn.innerText="ON"
+    newbtn.addEventListener("click",()=>{
+        if(value==="off")
+    {
+        img1.src="on.jpg"
+        value="on"
+        newbtn.innerText="OFF"
+    }
+    else{
+        img1.src="off.jpg"
+        value="off"
+        newbtn.innerText="ON"
+    }
+    })
+    </script>
+
+</body>
+</html>

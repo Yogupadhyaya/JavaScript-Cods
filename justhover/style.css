@@ -1,0 +1,25 @@
+.fun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-size: 50px;
+}
+
+
+
+.yes{
+    font-size: 50px;
+      border: 2px solid black;    /* thickness, style, and color */
+  border-radius: 10px; 
+    
+}
+
+.no{
+    font-size: 50px;
+      border: 2px solid black;    /* thickness, style, and color */
+  border-radius: 10px; 
+}
+
+
